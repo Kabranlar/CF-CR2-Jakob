@@ -21,24 +21,37 @@ $LMSans10-Bold-font-path: "./fonts/webfonts_LMSans10-Bold"
 	background-color: black
 	height: 20%
 
+#headerBottom #nav
+	padding-left: 60px
+
 #nav li
 	display: inline
 
-li a
+#headerBottom a
 	color: white
 	text-decoration: none
 	margin: 0 5px
 
+.articles
+	margin: auto
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
 .topic
 	background-color: #C4C4C4
+	width: 100%
+	margin-top: 20px
 
 .articleThumbnail
-	width: 169px
-	height: 135px
-	border: 1px solid red
+	display: flex
+	flex-direction: column
+	width: 45%
+	margin: 10px 0
 
-.articleThumbnail img
+.thumbnailImg
 	object-fit: cover
+	object-position: 0 0
 	height: 60%
 	width: 100%
 
@@ -46,10 +59,43 @@ li a
 	background-color: black
 	color: white
 	text-align: center
-	padding: 0 10px
+	object-fit: cover
+	height: 40%
+	display: flex
+	align-items: center
+
+.bannerMobile
 	object-fit: cover
 	width: 100%
-	height: 40%
+	height: 100%
+
+.muchText
+	font-size: 8pt
+
+#footer
+	background-color: black
+	text-align: center
+
+#footerBottom
+	color: white
+
+#footerTop a
+	color: white
+	text-decoration: none
+
+ul
+	padding: 0
+
+#footerTop #nav
+	margin: 0 20px
+	padding: 20px 0
+	font-size: 16pt
+
+#footerMiddle img
+	width: 50%
+
+#footerBottom
+	padding: 20px 0
 
 @font-face
 	font-family: 'LMSans10-Bold'
