@@ -4,6 +4,7 @@
 
 #main {
   margin: 10px;
+  min-width: 390px;
   max-width: 480px; }
 
 #header {
@@ -52,6 +53,9 @@
 
 .topic h2 {
   margin-left: 20px; }
+
+a {
+  text-decoration: none; }
 
 .articleThumbnail {
   display: flex;
@@ -113,12 +117,106 @@ ul {
   src: url("./fonts/webfonts_LMSans10-Bold/LMSans10-Bold.ttf.woff") format("woff"), url("./fonts/webfonts_LMSans10-Bold/LMSans10-Bold.ttf.svg#LMSans10-Bold") format("svg"), url("./fonts/webfonts_LMSans10-Bold/LMSans10-Bold.ttf.eot"), url("./fonts/webfonts_LMSans10-Bold/LMSans10-Bold.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 480px) {
   .desktop {
+    display: none; }
+
+  #tabletOnly {
     display: none; } }
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .mobile {
+    display: none; }
+
+  .tabletHide {
+    display: none; }
+
+  #specialHide {
+    display: none; }
+
+  #tabletOnly {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+  #main {
+    max-width: 1024px;
+    min-width: 700px; }
+
+  #headerTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  #headerTop img {
+    width: 100%;
+    height: auto; }
+
+  #headerTop div {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  #date {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px; }
+
+  .articles {
+    justify-content: space-between; }
+
+  .articleThumbnail {
+    width: 30%;
+    margin: 10px 0; }
+
+  .specialContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+
+  .specialLeft {
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 85%; }
+
+  .specialRight {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end; }
+
+  .specialArticle {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px; }
+
+  #footerTop {
+    display: flex; }
+
+  #footerMiddle {
+    display: flex;
+    justify-content: flex-end; }
+
+  #footerMiddle img {
+    width: 30%;
+    margin-right: 20px; }
+
+  #horizontalBanner {
+    width: 90%;
+    margin: 20px auto; }
+
+  #horizontalBanner img {
+    object-fit: cover;
+    width: 100%; } }
 /*desktop layout */
 @media screen and (min-width: 1024px) {
   .mobile {
+    display: none; }
+
+  #tabletOnly {
     display: none; }
 
   #main {
