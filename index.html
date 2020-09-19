@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>newspaperCF</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,12 @@
 		<div id="header">
 			
 			<div id="headerTop">
-				<img src="./img/logo-newspaper-cf.png" alt="newspaperCF logo">
+				<div>
+					<img src="./img/logo-newspaper-cf.png" alt="newspaperCF logo">
+				</div>
+				<div class="desktop">
+					<img class="desktop" src="./img/banner-1.png" alt="Banner CodeFactory">
+				</div>
 			</div>
 
 			<div id="headerBottom">
@@ -27,10 +33,14 @@
 
 		</div>
 
+		<div id="date" class="desktop">
+			<p class="desktop">Friday, 18.09.2020</p>
+		</div>
+
 		<div id="content">
 
 			<div class="topic">
-					<h2>Top News</h2>
+				<h2>Top News</h2>
 			</div>
 			
 			<div class="articles">
@@ -56,14 +66,14 @@
 					</div>
 				</div>
 
-				<div class="articleThumbnail">
+				<div class="articleThumbnail mobile">
 					<img class="bannerMobile" src="./img/banner-mobile-fswd.png" alt="FSWD on cyan background">
 				</div>
 
 			</div>
 
 			<div class="topic">
-					<h2>Popular</h2>
+				<h2>Popular</h2>
 			</div>
 
 			<div class="articles">
@@ -89,36 +99,80 @@
 					</div>
 				</div>
 
-				<div class="articleThumbnail">
-					<img class="bannerMobile" src="./img/banner-mobile-cf.png" alt="CF on yellow background">
+				<div class="articleThumbnail mobile">
+					<img class="bannerMobile mobile" src="./img/banner-mobile-cf.png" alt="CF on yellow background">
 				</div>
 
-				<div class="articleThumbnail">
+				<div class="articleThumbnail mobile">
 					<img class="thumbnailImg" src="./img/polar.png" alt="Three wrist watches">
 					<div class="thumbnailText">
 						<p>Polar's watches will watch you when you sleep</p>
 					</div>
 				</div>
 
-				<div class="articleThumbnail">
+				<div class="articleThumbnail mobile">
 					<img class="thumbnailImg" src="./img/nasa.png" alt="ISS in orbit">
 					<div class="thumbnailText">
 						<p>Popular holiday destinations for christmas</p>
 					</div>
-				</div>
+				</div>			
 
-				<div class="articleThumbnail">
+				<div class="articleThumbnail mobile">
 					<img class="thumbnailImg" src="./img/smart.png" alt="Outlet power socket">
 					<div class="thumbnailText">
 						<p>Super duper smart power outlets</p>
 					</div>
 				</div>
 
-				<div class="articleThumbnail">
+				<div class="articleThumbnail mobile">
 					<img class="thumbnailImg" src="./img/snowden.jpg" alt="Stylized hacker picture">
 					<div class="thumbnailText">
 						<p>Why Javascript is the perfect technology for you</p>
 					</div>
+				</div>
+
+				<div id="horizontalBanner" class="desktop">
+					<img src="./img/banner-3.png" alt="How to become a Webdev?">
+				</div>
+
+				<div class="specialContainer desktop">
+
+					<div class="specialLeft desktop">
+					
+						<div class="articleThumbnail specialArticle">
+							<img class="thumbnailImg" src="./img/polar.png" alt="Three wrist watches">
+							<div class="thumbnailText">
+								<p>Polar's watches will watch you when you sleep</p>
+							</div>
+						</div>
+
+						<div class="articleThumbnail specialArticle">
+							<img class="thumbnailImg" src="./img/nasa.png" alt="ISS in orbit">
+							<div class="thumbnailText">
+								<p>Popular holiday destinations for christmas</p>
+							</div>
+						</div>			
+
+						<div class="articleThumbnail specialArticle">
+							<img class="thumbnailImg" src="./img/smart.png" alt="Outlet power socket">
+							<div class="thumbnailText">
+								<p>Super duper smart power outlets</p>
+							</div>
+						</div>
+
+						<div class="articleThumbnail specialArticle">
+							<img class="thumbnailImg" src="./img/snowden.jpg" alt="Stylized hacker picture">
+							<div class="thumbnailText">
+								<p>Why Javascript is the perfect technology for you</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="specialRight desktop">
+						<img class="bannerDesktop desktop" src="./img/banner-4.png" alt="CF on yellow background">
+					</div>	
+
 				</div>
 
 			</div>
